@@ -38,5 +38,6 @@
         <artifactId>flight-sql</artifactId>
         <version>11.0.0</version>
     </dependency>
+
     </dependencies>
 </project>
