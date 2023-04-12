@@ -16,5 +16,9 @@ public class HelloWorld {
         BufferAllocator allocator = new RootAllocator(Long.MAX_VALUE);
         FlightClient flightClient = FlightClient.builder(allocator, location).build();
         FlightSqlClient sqlClient = new FlightSqlClient(flightClient);
+        // How to do it in Python:
+        // query = client.execute(sql)
+        // reader = client.do_get(query.endpoints[0].ticket)
+        // table = reader.read_all()
     }
 }
